@@ -1,3 +1,80 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'Hauora Sans';
+  src: url("../public/fonts/Hauora-ExtraLight.otf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Hauora Sans';
+  src: url("../public/fonts/Hauora-Light.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Hauora Sans';
+  src: url("../public/fonts/Hauora-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Hauora Sans';
+  src: url("../public/fonts/Hauora-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Hauora Sans';
+  src: url("../public/fonts/Hauora-SemiBold.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Hauora Sans';
+  src: url("../public/fonts/Hauora-Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Hauora Sans';
+  src: url("../public/fonts/Hauora-ExtraBold.otf");
+  font-weight: 800;
+}
+
+.font-hauora {
+  font-family: 'Hauora Sans', sans-serif;
+}
+
+.hover-underline {
+  display: inline-block;
+  position: relative;
+  color: #44403c;
+}
+
+.hover-underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  background-color: #44403c;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.hover-underline:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+/*# sourceMappingURL=globals.css.map */
