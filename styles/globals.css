@@ -47,6 +47,12 @@
   font-family: 'Hauora Sans', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  white-space: pre-wrap;
+  background-color: #f5f5f4;
+}
+
 .hover-underline {
   display: inline-block;
   position: relative;

@@ -10,7 +10,7 @@ const Megasecond: NextPage = () => {
   return (
     <div className="flex flex-col items-start bg-stone-100 min-h-screen overflow-x-hidden">
       <Head>
-        <title>Megasecond Zero</title>
+        <title>Megasecond | Megasecond Zero</title>
       </Head>
       <Navbar />
       <div className='flex items-end justify-between mt-12 mb-6 w-screen'>
